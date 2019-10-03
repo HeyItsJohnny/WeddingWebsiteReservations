@@ -1,0 +1,13 @@
+/* Windows */
+@media (min-width: 567px) {
+    ion-content.background{
+        --background: url('../../../assets/img/backgroundNormal.png') 0 0/100% 100% no-repeat;
+    }
+}
+
+/* Phone */
+@media (max-width: 567px) {
+    ion-content.background{
+        --background: url('../../../assets/img/backgroundPhone.png') 0 0/100% 100% no-repeat;
+    }
+}

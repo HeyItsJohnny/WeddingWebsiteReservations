@@ -1,0 +1,26 @@
+
+/* Windows */
+@media (min-width: 567px) {
+    ion-content.background{
+        --background: url('../../../assets/img/backgroundNormal.png') 0 0/100% 100% no-repeat;
+    }
+    .detailsLocation {
+        text-align: center;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 12%;
+    }
+}
+
+/* Phone */
+@media (max-width: 567px) {
+    ion-content.background{
+        --background: url('../../../assets/img/backgroundPhone.png') 0 0/100% 100% no-repeat;
+    }
+    .detailsLocation {
+        text-align: center;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 25%;
+    }
+}
