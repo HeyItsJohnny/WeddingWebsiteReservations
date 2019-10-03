@@ -149,8 +149,7 @@ export class HomePage implements OnInit{
       buttons: [
         {
           text: 'Yes',
-          handler: () => {
-            this.rsvpService.updateRsvpAttendance(DocSetID,"Attending");
+          handler: () => {            
             this.enterAllGuests(NumOfGuests,DocSetID);            
           }
         }, {
@@ -183,7 +182,8 @@ export class HomePage implements OnInit{
                   //this.rsvpGuest.id = docRef.id;
                 });
               }
-            } 
+            }
+            this.rsvpService.updateRsvpAttendance(DocSetID,"Attending");
             this.askDietaryRestrictions(DocSetID);
           }
         }
