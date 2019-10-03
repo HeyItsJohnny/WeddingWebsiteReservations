@@ -120,7 +120,7 @@ export class HomePage implements OnInit{
     var tmpRSVPCode = this.findRsvp.RSVPCode.toLowerCase();
     var rservice = this.rsvpService.getRsvpCodeFromSearch(tmpRSVPCode).subscribe(res => {
       if (res.length == 0) {
-        this.presentAlert("Error","RSVP was not found. Please try another email.");
+        this.presentAlert("Error","RSVP was not found. Please try again.");
       } else {
         this.rsvps = res.map(a => {
           const rsvp: Rsvp = a.payload.doc.data() as Rsvp;

@@ -9,7 +9,8 @@ const routes: Routes = [
   { path: 'rsvp/:id', loadChildren: './pages/rsvp/rsvp.module#RsvpPageModule' },
   { path: 'rsvp-diet-restrictions/:id', loadChildren: './pages/rsvp-diet-restrictions/rsvp-diet-restrictions.module#RsvpDietRestrictionsPageModule' },
   { path: 'rsvp-diet-restrictions', loadChildren: './pages/rsvp-diet-restrictions/rsvp-diet-restrictions.module#RsvpDietRestrictionsPageModule' },
-  
+  { path: 'rsvp-guests', loadChildren: './pages/rsvp-guests/rsvp-guests.module#RsvpGuestsPageModule' },
+  { path: 'rsvp-guests/:id', loadChildren: './pages/rsvp-guests/rsvp-guests.module#RsvpGuestsPageModule' }
 ];
 
 @NgModule({
