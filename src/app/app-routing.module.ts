@@ -4,13 +4,11 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', loadChildren: './pages/home/home.module#HomePageModule' },
-  { path: 'details', loadChildren: './pages/details/details.module#DetailsPageModule' },
-  { path: 'our-story', loadChildren: './pages/our-story/our-story.module#OurStoryPageModule' },
-  { path: 'registry', loadChildren: './pages/registry/registry.module#RegistryPageModule' },
+  { path: 'home/:id', loadChildren: './pages/home/home.module#HomePageModule' },
   { path: 'rsvp', loadChildren: './pages/rsvp/rsvp.module#RsvpPageModule' },
+  { path: 'rsvp/:id', loadChildren: './pages/rsvp/rsvp.module#RsvpPageModule' },
   { path: 'rsvp-diet-restrictions/:id', loadChildren: './pages/rsvp-diet-restrictions/rsvp-diet-restrictions.module#RsvpDietRestrictionsPageModule' },
   { path: 'rsvp-diet-restrictions', loadChildren: './pages/rsvp-diet-restrictions/rsvp-diet-restrictions.module#RsvpDietRestrictionsPageModule' },
-  { path: 'home-test', loadChildren: './pages/home-test/home-test.module#HomeTestPageModule' }
   
 ];
 

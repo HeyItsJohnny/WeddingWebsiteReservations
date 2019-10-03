@@ -1,32 +1,11 @@
 <ion-content padding class="background">
-  <!--<ion-toolbar text-center>  
-    <ion-buttons slot="start">
-      <ion-button color="light" (click)="openHome()">
-        <ion-icon color="light" slot="icon-only" name="home"></ion-icon>
-      </ion-button>
-      <ion-button color="light" (click)="openOurStory()">
-        Our Story
-      </ion-button>
-      <ion-button color="light" (click)="openDetails()">
-        Details
-      </ion-button>
-      <ion-button color="light" (click)="openRegistry()">
-        Registry
-      </ion-button>
-      <ion-button color="light" (click)="openRSVPs()">
-        RSVP
-      </ion-button>
-    </ion-buttons>
-  </ion-toolbar>-->
-  <ion-toolbar text-center>  
-    <ion-buttons slot="start">
-      <ion-button color="light" (click)="openBeta()">
-        beta
-      </ion-button>
-    </ion-buttons>
-  </ion-toolbar>
-  <div class="main-container">
-    <div class="header-img"></div>
-    <div class="details-img"></div>
+  <div class="detailsLocation">
+    <h3>Please Enter RSVP Code</h3>
+    <ion-list lines="full">
+      <ion-item>
+        <ion-input required type="text" [(ngModel)]="findRsvp.RSVPCode" placeholder='enter RSVP code here'></ion-input>
+      </ion-item>
+      <ion-button expand="full" (click)="findRSVPRecord()">Find RSVP</ion-button>
+    </ion-list>
   </div>
 </ion-content>
