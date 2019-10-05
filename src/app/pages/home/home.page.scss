@@ -1,3 +1,21 @@
+@font-face {
+    font-family: 'collectionfreeregular';
+    src: url('../../../assets/fonts/collection/collectionfree-webfont.woff2') format('woff2'),
+         url('../../../assets/fonts/collection/collectionfree-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.homePageText {
+font-family: 'collectionfreeregular';
+font-weight: normal;
+font-style: normal;
+font-size: 700%;
+padding-top: 5%;
+color: black;
+} 
+  
+
 /* Windows */
 @media (min-width: 567px) {
     ion-content.background{
